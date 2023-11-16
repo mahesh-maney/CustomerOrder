@@ -1,0 +1,17 @@
+server:
+  port: 8484
+spring:
+  datasource:
+    crops:
+      jdbcUrl:
+      username:
+      password:
+      driverClassName:
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+
+
+
+
+

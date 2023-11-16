@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tarento.cellmark.mapper.CustomerOrderMapper">
+    <resultMap type="com.tarento.cellmark.model.SampleResultSet" id="result">
+        <result property="CO_NUMBER" column="CO_NUMBER" />
+        <result property="ORDER_DATE" column="ORDER_DATE" />
+        <result property="LOCATION_NAME" column="LOCATION_NAME" />
+        <result property="CUSTOMER_NUMBER" column="CUSTOMER_NUMBER" />
+        <result property="SHIPPER_NAME" column="SHIPPER_NAME" />
+    </resultMap>
+    <select id="searchOrders" resultType="com.tarento.cellmark.model.SampleResultSet" resultMap="result">
+        <!-- Add the actual SQL statement -->
+        SELECT CO_NUMBER, ORDER_DATE, LOCATION_NAME, CUSTOMER_NUMBER, SHIPPER_NAME FROM CUSTOMER_ORDER WHERE CUSTOMER_NUMBER = 190045 AND SHIPPER_NAME = 'CM'
+    </select>
+</mapper>
