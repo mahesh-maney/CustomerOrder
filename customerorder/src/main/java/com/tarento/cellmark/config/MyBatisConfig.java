@@ -1,5 +1,6 @@
 package com.tarento.cellmark.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -16,6 +17,7 @@ import org.springframework.core.io.ClassPathResource;
 import javax.sql.DataSource;
 
 @Configuration
+@Slf4j
 @MapperScan(basePackages = "com.tarento.cellmark.mapper", sqlSessionTemplateRef ="cropsSqlSessionTemplate")
 
 public class MyBatisConfig {

@@ -3,6 +3,7 @@ package com.tarento.cellmark.controller;
 import com.tarento.cellmark.handler.CustomerOrderHandler;
 import com.tarento.cellmark.model.CustomerOrderSearchModel;
 import com.tarento.cellmark.model.SampleResultSet;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api/v1/customerorder")
+@Slf4j
 public class CustomerOrderController {
 
     @Autowired

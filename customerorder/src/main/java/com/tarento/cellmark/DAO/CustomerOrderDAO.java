@@ -2,10 +2,12 @@ package com.tarento.cellmark.DAO;
 
 import com.tarento.cellmark.mapper.CustomerOrderMapper;
 import com.tarento.cellmark.model.SampleResultSet;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class CustomerOrderDAO {
 
     private SqlSession session;
